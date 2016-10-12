@@ -8,8 +8,8 @@
 
 3. 在` 百度图片` 中找与下图最相似的图片，给出链接：
 
- ![头像](img_rel/icon.png)
+ ![头像](../img_rel/icon.png)
 4. 配置JAVA环境变量，完成效果如图: 
 
- ![JAVA环境变量配置完成效果图](img_rel/java_path.png)
+ ![JAVA环境变量配置完成效果图](../img_rel/java_path.png)
 5. 简要概述JAVA环境变量的作用
