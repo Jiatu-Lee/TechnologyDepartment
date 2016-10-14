@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>长安道</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('digital-7_mono.ttf') format("truetype");
+        }
+
+        body {
+            background: #ffffff;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h4 {
+            display: inline;
+        }
+    </style>
+    <link href="style/default.css" type="text/css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <script type="text/javascript" src="style/jquery.js"></script>
+    <script type="text/javascript" src="style/garden.js"></script>
+    <script type="text/javascript" src="style/functions.js"></script>
+</head>
+
+<body>
+<div id="mainDiv">
+
+    <div id="content">
+        <div style="text-align:center;">
+            <h2>技术部部长-刘程路的自我介绍和对技术部的介绍</h2>
+        </div>
+        <div id="code" style="margin-top: 50px;">
+            <span class="comments"><h4>/**</h4></span><br/>
+            <span class="space"/><span class="comments"><h4>* 大家好，我叫刘程路,现任本社团技术部部长</h4></span><br/>
+            <span class="space"/><span class="comments"><h4>* 平时喜欢宅着，鼓捣电脑</h4></span><br/>
+            <span class="space"/><span class="comments"><h4>* 偶尔跑跑步</h4></span><br/>
+            <span class="space"/><span class="comments"><h4>*/</h4></span><br/>
+            <h4>
+            Boy i = getBoy();<br/>
+            <span class="comments">// 现在有了一个我 </span><br/>
+            i.setName("Jiatu-Lee");<br/>
+            <span class="comments">// 我的英文名字是Jiatu Lee</span><br/>
+            i.setDepartment("TechnologyDepartment");<br/>
+            <span class="comments">// 我属于技术部</span><br/>
+            i.sayHiToYou("大家好！");<br/>
+            <span class="comments">// 我在向大家问好</span><br/>
+            Boy.saySomething();<br/>
+            <span class="comments">/**</span><br/>
+            <span class="comments">* 电子商务社团面向全校持续纳新，能够更大范围的吸纳各类人才</span><br/>
+            <span class="comments">*  技术部主要为社团的项目提供技术支持</span><br/>
+            <span class="comments">* 与项目部、美工部一起将技能交换的思想传递、散播， 并将社团壮大</span><br/>
+            <span class="comments">* 在技术部你会与项目、美工两部的伙伴经常交流，还有学长、学姐为你解答困惑</span><br/>
+            <span class="comments">*/</span><br/>
+            <span class="keyword">boolean</span> isJoin = <span class="keyword">false</span>;<br/>
+            <span class="keyword">while</span> (isJoin) {<br/>
+            <span class="placeholder"/>us.waitFor(u);<br/>
+            <span class="comments">// 如果你还没有加入我们，我们会等下去</span><br/>
+            if(u.Join(us)) break;<br/>
+            <span class="comments">// 直到你来</span><br/>
+            }<br/>
+            us.GrowWith(u);<br/>
+            us.AdvancedWith(u);<br/>
+            <span class="comments">// 我们与你共同成长</span><br/>
+            <span class="comments">// 共同进步</span><br/><br/><br/>
+            <span class="comments"> 以上</span><br/>
+            <div style="margin-right: 60px; float: right"><span class="comments">by Jiatu Lee</span></div>
+            </h4>
+        </div>
+
+        <canvas id="garden"></canvas>
+
+    </div>
+</div>
+<script type="text/javascript">
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "你当前的浏览器不支持HTML5!<br/>建议使用Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 10000);
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+</script>
+</body>
+</html>
